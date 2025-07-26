@@ -1,0 +1,249 @@
+.line {
+    width: 100%;
+    border-top: 2px solid var(--color-line);
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.grid {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+.row, .row_last {
+    width: 1120px;
+    margin: 0px -14px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row_last {
+    justify-content: space-between;
+}
+
+.col_4 {
+    width: 40%;
+    flex: 0 0 40%;
+    padding: 0px 14px
+}
+
+.col_6 {
+    padding: 0px 14px;
+    width: 60%;
+    flex: 0 0 60%;
+}
+
+.col_3 {
+    padding: 0px 14px;
+    flex: 0 0 33.33333%;
+    width: 33.3333%;
+}
+
+.col_2 {
+    width: 50%;
+    flex: 0 0 50%;
+    padding: 0px 14px;
+}
+
+.info {
+
+    .logo_name {
+        display: flex;
+        height: 50px;
+        align-items: center;
+        margin-bottom: 30px;
+
+        span {
+            font-size: 20px;
+            margin-left: 20px;
+            font-weight: 700;
+        }
+
+    }
+    p {
+        width: 300px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .icon {
+        margin-right: 20px;
+        display: inline-block;
+    }
+}
+
+.row_list {
+    width: 100%;
+    margin: 0px -14px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about, .help, .social {
+    h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+
+    span {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.container_social {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        background-color: #eee;
+
+        &:hover {
+            background-color: #ddd;
+        }
+    }
+}
+
+.col_2 {
+    .copy {
+        height: 50px;
+        align-items: center;
+        display: flex;
+
+        p {
+            font-size: 12px;
+            color: var(--text-color-op);
+        }
+    }
+}
+
+.chat {
+    display: flex;
+    justify-content: right;
+    
+    div {
+        color: var(--primary-color);
+        width: 50px;
+        height: 50px;
+        background-color: rgba(156, 105, 226, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover > .icon_chart {
+            transform: scale(1.2);
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .row {
+        padding: 0px 30px;
+
+        .col_4 {
+            width: 100%;
+            flex: 0 0 100%;
+
+            .info {
+
+                p {
+                    width: auto;
+                }
+            }
+        }
+
+        .col_6 {
+            width: 100%;
+            flex: 0 0 100%;
+            margin-top: 30px;
+        }
+
+        .col_3 {
+            width: 50%;
+            flex: 0 0 50%;
+        }
+
+        .social {
+            display: none;
+        }
+    }
+
+    .grid {
+        padding: 0px 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    .footer {
+
+        .row {
+            width: 640px;
+            display: block;
+
+            .col_4, .col_6 {
+                width: 100%;
+            }
+
+            .col_4 {
+                p {
+                    width: auto;
+                }
+            }
+
+            .col_6 {
+                margin-top: 40px;
+            }
+        }
+
+    }
+
+    .grid {
+        width: 640px;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1023px) {
+    .footer {
+
+        .row {
+            width: 960px;
+        }
+    }
+
+    .grid {
+        width: 960px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .footer {
+
+        .row {
+            width: 1024px;
+        }
+    }
+
+    .grid {
+        width: 1024px;
+    }
+}

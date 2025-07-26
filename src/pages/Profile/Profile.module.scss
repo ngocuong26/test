@@ -1,0 +1,121 @@
+.profile {
+    display: flex;
+    padding-right: 50px;
+    width: 100%;
+}
+
+.container_manage, .container_loading {
+    margin-top: 80px;
+    margin-left: 370px;
+    width: 100%;
+
+    .menu {
+        display: none;
+    }
+}
+
+.container_loading {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .container_manage {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 30px;
+        
+        .menu {
+            margin-bottom: 60px;
+            font-size: 24px;
+            margin-left: 20px;
+            margin-right: 20px;
+            position: relative;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    .profile {
+        padding-right: 0;
+    }
+
+    .show_nav {
+        background-color: #eee;
+        position: absolute;
+        width: 100%;
+        // height: 100px;
+        top: 50px;
+        right: 0;
+        padding: 30px;
+        z-index: 100;
+        border-radius: 5px;
+        box-shadow: var(--box-shadow);
+        transition: all 0.3s ease;
+
+        p {
+            font-size: 18px;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background-color: var(--primary-color);
+            color: #fff;
+            margin-top: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .profile {
+        padding-right: 0;
+    }
+    
+    .container_manage {
+        margin-left: 0;
+        margin: auto 30px;
+
+        .menu {
+            margin-top: 30px;
+            margin-bottom: 50px;
+            display: flex;
+            height: 50px;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 24px;
+            position: relative;
+        }
+
+        .show_nav {
+            background-color: #eee;
+            position: absolute;
+            width: 50%;
+            // height: 100px;
+            top: 50px;
+            right: 0;
+            padding: 30px;
+            z-index: 100;
+            border-radius: 5px;
+            box-shadow: var(--box-shadow);
+            transition: all 0.3s ease;
+
+            p {
+                font-size: 18px;
+            }
+
+            button {
+                font-size: 18px;
+                padding: 10px 20px;
+                border-radius: 50px;
+                background-color: var(--primary-color);
+                color: #fff;
+                margin-top: 30px;
+            }
+        }
+    }
+}

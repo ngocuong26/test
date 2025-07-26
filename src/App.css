@@ -1,0 +1,53 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100%;
+  display: flex;
+  /* overflow: hidden; */
+}
+
+.content {
+  width: 1120px;
+  margin: auto;
+}
+
+.signin {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile {
+  overflow: hidden;
+}
+
+/* smartphone */
+@media screen and (max-width: 767px) {
+  .content {
+    width: 100%;
+    padding: 0px 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    .content {
+        width: 640px;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1023px) {
+    .content {
+        width: 960px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .content {
+      width: 1024px;
+    }
+}

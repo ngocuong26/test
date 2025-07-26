@@ -1,0 +1,147 @@
+.container_header {
+    height: 60px;
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .logo {
+        display: block;
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        line-height: 60;
+    }
+
+    button {
+        background-color: var(--primary-color);
+        color: #fff;
+        font-weight: 700;
+        height: 60px;
+        font-size: 16px;
+        width: 208px;
+        border-radius: 50px;
+
+        &:hover {
+            background-color: var(--btn-hover);
+        }
+    }
+
+    div {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 50px;
+}
+
+.container_header {
+    .menu_phone {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    
+    .container_header {
+        .menu {
+            display: none;
+        }
+
+        button {
+            display: none;
+        }
+
+        .menu_phone {
+            display: flex;
+            align-items: center;
+            color: rgb(33 35 83);
+            font-size: 22px;
+            cursor: pointer;
+        }
+    }
+
+    .show_menu {
+        display: block;
+        position: absolute;
+        top: 60px;
+        background-color: #f0e8dc;
+        width: 100%;
+        padding: 20px 30px;
+        z-index: 20;
+        box-shadow: var(--box-shadow);
+        animation: fadeIn 0.2s linear;
+        right: 0;
+
+        p {
+            margin-bottom: 18px;
+        }
+
+        .link {
+            display: block;
+        }
+    }
+
+    .btn_phone {
+
+        p {
+            background-color: var(--primary-color);
+            padding: 10px 20px;
+            border-radius: 50px;
+            color: #fff;
+
+            &:hover {
+                cursor: pointer;
+                background-color: var(--btn-hover);
+            }
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            padding: 0;
+            opacity: 0;
+            width: 0px;
+            height: 0px;
+            top: 60px;
+        }
+
+        to {
+            opacity: 1;
+            width: 100%;
+            height: auto;
+            top: 60px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    .container_header {
+        width: 640px;
+
+        .menu {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1023px) {
+    .container_header {
+        width: 960px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .container_header {
+        width: 1024px;
+    }
+}

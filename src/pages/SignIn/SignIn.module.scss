@@ -1,0 +1,57 @@
+.container_signin {
+    width: 410px;
+
+    h1 {
+        font-size: 64px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    label {
+        display: block;
+    }
+
+    input {
+        border-radius: 5px;
+        width: 100%;
+        border: 1px solid #ddd;
+        outline: none;
+        padding: 10px 12px;
+        margin-top: 8px;
+        height: 50px;
+        font-size: 18px;
+
+        &:focus {
+            border: 1px solid var(--primary-color);
+        }
+    }
+
+    button {
+        width: 100%;
+        background-color: var(--primary-color);
+        color: #fff;
+        height: 48px;
+        margin-top: 30px;
+        border-radius: 50px;
+
+        &:hover {
+            background-color: var(--btn-hover);
+        }
+    }
+
+    span {
+        color: red;
+        margin-top: 4px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container_signin {
+        max-width: 300px;
+
+        input {
+            width: 100%;
+        }
+    }
+}
